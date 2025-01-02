@@ -7,7 +7,8 @@
     "dev": "pnpm --filter @hm-element/play dev",
     "docs:dev": "pnpm --filter @hm-element/docs vitepress dev",
     "docs:build": "pnpm --filter @hm-element/docs vitepress build",
-    "test": "echo todo"
+    "test": "pnpm --filter @hm-element/components test",
+    "story": "pnpm --filter @hm-element/play storybook "
   },
   "keywords": [],
   "author": "",
@@ -30,11 +31,15 @@
   },
   "dependencies": {
     "hm-element": "workspace:*",
+    "@hm-element/components": "workspace:*",
     "@hm-element/hooks": "workspace:*",
     "@hm-element/utils": "workspace:*",
     "@hm-element/theme": "workspace:*",
     "@hm-element/play": "workspace:*",
     "lodash-es": "^4.17.21",
-    "vue": "^3.4.19"
+    "vue": "^3.4.19",
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/vue-fontawesome": "^3.0.8"
   }
 }

@@ -1,24 +1,28 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <hm-button></hm-button>
+  <div>
+    <hm-button type="primary" size="medium" plain="true" icon="spinner">
+      login
+    </hm-button>
+  </div>
+
+  <div>
+    按钮组测试
+    <hm-button-group type="primary" size="medium">
+      <hm-button>
+        login
+      </hm-button>
+      <hm-button>
+        register
+      </hm-button>
+      <hm-button>
+        logout
+      </hm-button>
+    </hm-button-group>
+  </div>
+
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+<style scoped></style>
